@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Agro Products Info</h1>
+        <h1>Welcome to Alex Agro Products Info</h1>
     </header>
     <nav>
         <ul>
