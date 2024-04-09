@@ -15,12 +15,14 @@
             <li>Apples</li>
             <li>Oranges</li>
             <li>Bananas</li>
+            <li>Water Leaf</li>
         </ul>
         <h2>Vegetables</h2>
         <ul>
             <li>Carrots</li>
             <li>Broccoli</li>
             <li>Spinach</li>
+            <li>Plantain</li>
         </ul>
     </main>
     <footer>
