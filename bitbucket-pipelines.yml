@@ -1,0 +1,40 @@
+image: alpine:latest
+
+pipelines:
+ branches:
+    '{dev,uat,feature/*}':
+      - step:
+          name: Run Tests
+          script:
+            - echo "Running Regression Tests..."
+            - sleep 3s
+            - echo "Test Succsseful"
+      - step:
+          name: Deploy to Dev Environemt
+          script:
+            - pipe: atlassian/ssh-run:0.2.4
+              variables:
+                SSH_USER: 'dokku'
+                SERVER: $DOKKU_DEV_HOST
+                SSH_KEY: $SSH_KEY
+                MODE: 'script'
+                COMMAND: 'scripts/deploy.sh'
+
+    '{main,master}':
+    - step:
+        name: Run Final Tests
+        script:
+          - echo "Running Final Regression Tests..."
+          - sleep 3s
+          - echo "Test Succsseful"
+    - step:
+        name: Deploy to Dev Environemt
+        script:
+          - pipe: atlassian/ssh-run:0.2.4
+            variables:
+              SSH_USER: 'dokku'
+              SERVER: $DOKKU_LIVE_HOST
+              SSH_KEY: $SSH_KEY
+              MODE: 'script'
+              COMMAND: 'scripts/deploy.sh'
+
