@@ -2,19 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Agro Products Info</title>
+    <title>Coming Soon</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Agro Products Info</h1>
+        <h1>Coming Soon</h1>
     </header>
-    <nav>
+    <main>
+        <h2>Fruits</h2>
         <ul>
-            <li><a href="products.php">Available Products</a></li>
-            <li><a href="coming-soon.php">Coming Soon</a></li>
+            <li>Pears</li>
+            <li>Grapes</li>
         </ul>
-    </nav>
+        <h2>Vegetables</h2>
+        <ul>
+            <li>Cucumbers</li>
+            <li>Tomatoes</li>
+        </ul>
+    </main>
     <footer>
         <p>&copy; 2024 Agro Products Info</p>
     </footer>
