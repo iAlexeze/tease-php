@@ -22,3 +22,42 @@ nav ul li a {
     text-decoration: none;
     color: #007bff;
 }
+/* Add this to your existing CSS */
+#subscribe, #about {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#subscribe-form input[type="email"] {
+    padding: 5px;
+    width: 200px;
+}
+
+#subscribe-form button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#about {
+    text-align: center;
+}
+
+/* Font Awesome */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

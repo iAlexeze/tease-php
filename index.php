@@ -20,3 +20,16 @@
     </footer>
 </body>
 </html>
+<!-- Add this inside the <body> tag -->
+<section id="subscribe">
+    <h2>Subscribe for Updates</h2>
+    <form id="subscribe-form">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+<section id="about">
+    <h2>About Company</h2>
+    <p>Learn more about our company and mission.</p>
+    <a href="about.php">Read More</a>
+</section>
