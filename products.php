@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Available Products</title>
+    <title>Available Products Today</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
